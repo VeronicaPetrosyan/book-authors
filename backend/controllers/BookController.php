@@ -7,10 +7,12 @@ use yii\data\ActiveDataProvider;
 use common\models\Author;
 use backend\models\bookSearch;
 use yii\web\Controller;
+use yii\web\Cookie;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use common\models\AuthorBook;
 use common\widgets\AuthorWidget;
+use yii;
 
 /**
  * BookController implements the CRUD actions for book model.
@@ -138,7 +140,6 @@ class BookController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
-
 
 }
 

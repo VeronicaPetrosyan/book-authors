@@ -3,6 +3,9 @@
 namespace common\models;
 
 
+use Yii;
+use yii\web\Cookie;
+
 /**
  * This is the model class for table "books".
  *
@@ -12,7 +15,7 @@ namespace common\models;
 class Book extends \yii\db\ActiveRecord
 {
     public $authorIds = [];
-    
+
     /**
      * {@inheritdoc}
      */
@@ -66,5 +69,7 @@ class Book extends \yii\db\ActiveRecord
         }
         return true;
     }
+
+
 
 }

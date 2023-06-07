@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use common\models\Book;
 
 /** @var yii\web\View $this */
 /** @var common\models\book $model */
@@ -33,5 +34,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'name',
         ],
     ]) ?>
+
 
 </div>
